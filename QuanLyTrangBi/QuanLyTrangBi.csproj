@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8B974C3-D809-4521-BC60-DD63240260C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyTrangBi</RootNamespace>
+    <AssemblyName>QuanLyTrangBi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_BaoDuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_BaoDuong.Designer.cs">
+      <DependentUpon>QL_BaoDuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_NhomNganh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_NhomNganh.Designer.cs">
+      <DependentUpon>QL_NhomNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_ChuyenNhom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_ChuyenNhom.Designer.cs">
+      <DependentUpon>QL_ChuyenNhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_SuaChua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_SuaChua.Designer.cs">
+      <DependentUpon>QL_SuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_ThamSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_ThamSo.Designer.cs">
+      <DependentUpon>QL_ThamSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_LoaiTrangBi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_LoaiTrangBi.Designer.cs">
+      <DependentUpon>QL_LoaiTrangBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QL_TrangBi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QL_TrangBi.Designer.cs">
+      <DependentUpon>QL_TrangBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TK_BaoDuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\TK_BaoDuong.Designer.cs">
+      <DependentUpon>TK_BaoDuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TK_ChuyenNhom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\TK_ChuyenNhom.Designer.cs">
+      <DependentUpon>TK_ChuyenNhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TK_SuaChua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\TK_SuaChua.Designer.cs">
+      <DependentUpon>TK_SuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BranchGroup.cs" />
+    <Compile Include="Model\Database.cs" />
+    <Compile Include="Model\Equipment.cs" />
+    <Compile Include="Model\EquipmentType.cs" />
+    <Compile Include="Model\GroupTransferDiary.cs" />
+    <Compile Include="Model\MaintainDiary.cs" />
+    <Compile Include="Model\Parameter.cs" />
+    <Compile Include="Model\RepairDiary.cs" />
+    <Compile Include="Model\sysdiagram.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.cs" />
+    <EmbeddedResource Include="GUI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_BaoDuong.resx">
+      <DependentUpon>QL_BaoDuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_ChuyenNhom.resx">
+      <DependentUpon>QL_ChuyenNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_NhomNganh.resx">
+      <DependentUpon>QL_NhomNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_SuaChua.resx">
+      <DependentUpon>QL_SuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_ThamSo.resx">
+      <DependentUpon>QL_ThamSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_LoaiTrangBi.resx">
+      <DependentUpon>QL_LoaiTrangBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QL_TrangBi.resx">
+      <DependentUpon>QL_TrangBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TK_BaoDuong.resx">
+      <DependentUpon>TK_BaoDuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TK_ChuyenNhom.resx">
+      <DependentUpon>TK_ChuyenNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TK_SuaChua.resx">
+      <DependentUpon>TK_SuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
